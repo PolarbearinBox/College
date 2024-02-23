@@ -1,0 +1,70 @@
+public class BankCustomer {
+		
+		private int accountNumber;
+		private String customerName;
+		private String customerAddress;
+		private String customerDateOfBirth;
+		
+		public void setAccountNumber(int newNumber)
+		{
+			accountNumber = newNumber;
+		}
+		
+		public int getAccountNumber()
+		{
+			return accountNumber;
+		}
+		
+		public void setCustomerName(String newName)
+		{
+			customerName = newName;
+		}
+		
+		public String getCustomerName()
+		{
+			return customerName;
+		}
+		
+		public void setCustomerAddress(String newAddress)
+		{
+			customerAddress = newAddress;
+		}
+		
+		public String getCustomerAddress()
+		{
+			return customerAddress;
+		}
+		
+		public void setCustomerDateOfBirth(String newDate)
+		{
+			customerDateOfBirth = newDate;
+		}
+		
+		public String getCustomerDateOfBirth()
+		{
+			return customerDateOfBirth;
+		}
+
+public static void main(String[] args) {
+	
+	
+	
+	int tdwAccountNumber = 123;
+	String tdwName = "DingWen";
+	String tdwAddress = "502";
+	String tdwBirth = "2002/Jul/23";
+	
+	BankCustomer tdw = new BankCustomer();
+	
+	tdw.setAccountNumber(tdwAccountNumber);
+	tdw.setCustomerName(tdwName);
+	tdw.setCustomerAddress(tdwAddress);
+	tdw.setCustomerDateOfBirth(tdwBirth);
+	
+	tdw.getAccountNumber();
+	tdw.getCustomerName();
+	tdw.getCustomerAddress();
+	tdw.getCustomerDateOfBirth();
+
+	}
+}

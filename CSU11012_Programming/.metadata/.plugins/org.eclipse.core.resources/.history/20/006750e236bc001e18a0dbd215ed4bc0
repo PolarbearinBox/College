@@ -1,0 +1,27 @@
+
+public class Swap {
+	
+	private double number1;
+	private double number2;
+	private double store;
+	
+	public void setNumbers(double n1, double n2)
+	{
+		number1 = n1;
+		number2 = n2;
+	}
+	
+	public void getResult()
+	{
+		store = number1;
+		
+		number1 = number2;
+		number2 = store;
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

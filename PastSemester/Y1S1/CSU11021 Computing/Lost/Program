@@ -1,0 +1,18 @@
+CMP R1, #1
+  BLS NonPrime @ 1 and 0 are special cases, they are not prime numbers
+  MOV R2, R1 @ set R2 as n = x - 1 as the divider
+Search:
+  SUB R2, R2, #1
+  UDIV R3, R1, R2   @ R3 = quotient by R1/R2
+  MUL R4, R3, R2   @ R4 = quotient * divider
+  SUB R5, R1, R4    @ R5 = remainder
+  CMP R5, #0
+  BNE Search
+  CMP R2, #1
+  BHI NonPrime
+  MOV R0, #1
+  CMP R0, #1
+  BEQ EndPrime
+NonPrime:
+  MOV R0, #0
+EndPrime:
